@@ -1,0 +1,84 @@
+{
+"intents": [
+{
+"tag": "greeting",
+"patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+"responses": [
+"Hello! How can I help you today?",
+"Hey there! What can I do for you?",
+"Hi! Need help with something?"
+]
+},
+{
+"tag": "goodbye",
+"patterns": ["bye", "goodbye", "see you", "exit"],
+"responses": [
+"Goodbye! Have a great day!",
+"See you later!",
+"Bye! Come back anytime."
+]
+},
+{
+"tag": "name.ask",
+"patterns": ["what's your name", "who are you", "your name"],
+"responses": [
+"I'm chatbot_2, your friendly assistant.",
+"You can call me chatbot_2!"
+]
+},
+{
+"tag": "name.user.set",
+"patterns": ["my name is *", "call me *"],
+"responses": [
+"Nice to meet you, {user_name}!",
+"Great, I'll remember that, {user_name}."
+]
+},
+{
+"tag": "help",
+"patterns": ["help", "what can you do", "how to use you", "commands"],
+"responses": [
+"I can answer FAQs, remember your name, tell the time, show tips, and chat! Try: 'set my name to Alex', 'what time is it', or ask a common question."
+]
+},
+{
+"tag": "time.now",
+"patterns": ["what time is it", "current time", "time now"],
+"responses": [
+"It's {time_now}.",
+"Right now it's {time_now}."
+]
+},
+{
+"tag": "faq.delivery",
+"patterns": ["how long is delivery", "delivery time", "shipping duration"],
+"responses": [
+"Standard delivery takes 3–5 business days, express 1–2 days.",
+"We ship in 3–5 days normally, or 1–2 days with express."
+]
+},
+{
+"tag": "faq.return",
+"patterns": ["return policy", "how to return", "can I return"],
+"responses": [
+"You can return items within 30 days if unused and in original packaging.",
+"30‑day returns are accepted—keep the packaging and receipt."
+]
+},
+{
+"tag": "jokes",
+"patterns": ["tell me a joke", "joke please"],
+"responses": [
+"Why did the developer go broke? Because they used up all their cache!",
+"I would tell you a UDP joke, but you might not get it."
+]
+}
+],
+"fallback": {
+"responses": [
+"I'm not sure about that yet. Could you rephrase?",
+"I didn't quite get that—try asking in a simpler way.",
+"Hmm, I'm still learning. Can you try another question?"
+]
+}
+}
