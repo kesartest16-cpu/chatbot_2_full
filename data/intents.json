@@ -10,6 +10,14 @@
 ]
 },
 {
+"tag": "wishes",
+"patterns": ["good morning", "good evening"],
+"responses": [
+"Good Morning! How can I help you?",
+"Good Evening! How can I help you?"
+]
+},
+{
 "tag": "goodbye",
 "patterns": ["bye", "goodbye", "see you", "exit"],
 "responses": [
